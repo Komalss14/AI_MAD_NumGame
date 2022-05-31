@@ -88,6 +88,31 @@ public class MainActivity extends AppCompatActivity {
         else if(operator.equals("/")){
             correctAnswer = operand1 / operand2;
         }
+       if(correctButton == 0){
+            button1.setText(correctAnswer + "");
+            button2.setText(correctAnswer + 1 +"");
+            button3.setText(correctAnswer + -1 + "");
+            button4.setText(correctAnswer + 2 + "");
+        }
+        if(correctButton == 1){
+            button1.setText(correctAnswer + "");
+            button2.setText(correctAnswer + 1 +"");
+            button3.setText(correctAnswer + -1 + "");
+            button4.setText(correctAnswer + 2 + "");
+        }
+        if(correctButton == 2){
+            button3.setText(correctAnswer + "");
+            button1.setText(correctAnswer + 1 +"");
+            button2.setText(correctAnswer + -1 + "");
+            button4.setText(correctAnswer + 2 + "");
+        }
+        if(correctButton == 3){
+            button1.setText(correctAnswer + "");
+            button2.setText(correctAnswer + 1 +"");
+            button3.setText(correctAnswer + -1 + "");
+            button4.setText(correctAnswer + 2 + "");
+        }
+       
         textView2.setText(operand1 + operator + operand2);
 
       // Your code here, to diplay correct and incorrect options on the buttons
